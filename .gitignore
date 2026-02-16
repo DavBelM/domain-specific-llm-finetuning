@@ -1,0 +1,86 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Model files (too large for git)
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+models/experiment_*/
+!models/README.md
+
+# Data files
+data/*.csv
+data/*.json
+data/*.txt
+data/*.parquet
+!data/README.md
+
+# Results and logs
+results/*.csv
+results/*.json
+results/*.png
+results/*.jpg
+results/*.log
+!results/*.md
+logs/
+wandb/
+runs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.cache
+
+# Hugging Face cache (optional - comment out if you want to keep cache)
+# .cache/
+# huggingface/
+
+# Gradio temporary files
+gradio_cached_examples/
+flagged/
