@@ -142,8 +142,9 @@ We conducted 4 systematic experiments with different hyperparameter configuratio
 **Best Model:** Experiment 1 achieved lowest perplexity (2.2263) with **99.88% improvement** over baseline.
 
 **Evaluation Metrics (Baseline vs Best Fine-tuned):**
+
 - **BLEU:** 9.59 → 12.70 (+32.4%)
-- **ROUGE-1:** 0.322 → 0.409 (+26.9%)  
+- **ROUGE-1:** 0.322 → 0.409 (+26.9%)
 - **ROUGE-2:** 0.172 → 0.243 (+41.3%)
 - **ROUGE-L:** 0.249 → 0.323 (+29.8%)
 - **Perplexity:** 1897.58 → 2.23 (**-99.88%** ✅)
