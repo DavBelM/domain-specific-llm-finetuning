@@ -37,12 +37,13 @@ env.bak/
 venv.bak/
 
 # Model files (too large for git)
-*.bin
-*.safetensors
+# Note: LoRA adapters are small enough to commit
+# *.bin
+# *.safetensors
 *.pt
 *.pth
 *.ckpt
-models/experiment_*/
+# models/experiment_*/
 !models/README.md
 
 # Data files
