@@ -308,7 +308,7 @@ This example shows a real interaction from the deployed Gradio interface, compar
 
 **Course:** Domain-Specific LLM Fine-tuning Project  
 **Date:** February 2026  
-**Institution:** [Your Institution]
+**Institution:** African Leadership University
 
 ## ⚖️ License & Disclaimer
 
