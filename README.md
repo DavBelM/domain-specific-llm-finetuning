@@ -211,7 +211,7 @@ A comprehensive 7-10 minute demo video showcasing:
 - Baseline vs fine-tuned comparison
 - Key insights and conclusions
 
-**Video Link:** [To be added after recording]
+**Video Link:** [Watch Demo on YouTube](https://youtu.be/IFD-PNFkHwY)
 
 ## 📊 Results Summary
 
@@ -219,12 +219,11 @@ A comprehensive 7-10 minute demo video showcasing:
 
 | Metric     | Baseline | Fine-tuned | Improvement |
 | ---------- | -------- | ---------- | ----------- |
-| BLEU       | TBD      | TBD        | TBD%        |
-| ROUGE-1    | TBD      | TBD        | TBD%        |
-| ROUGE-L    | TBD      | TBD        | TBD%        |
-| Perplexity | TBD      | TBD        | TBD%        |
-
-**Note:** Results will be populated after running the complete notebook.
+| BLEU       | 9.59     | 12.70      | +32.4%      |
+| ROUGE-1    | 0.322    | 0.409      | +26.9%      |
+| ROUGE-2    | 0.172    | 0.243      | +41.3%      |
+| ROUGE-L    | 0.249    | 0.323      | +29.8%      |
+| Perplexity | 1897.58  | 2.23       | **-99.88%** |
 
 ### Key Findings
 
@@ -242,7 +241,31 @@ A comprehensive 7-10 minute demo video showcasing:
 5. **Training Efficiency:** 4-bit quantization + LoRA enabled training on free GPU tier
 6. **Hyperparameter Insights:** Lower learning rate (1e-4) with smaller LoRA rank (8) yielded best results
 
-## 💡 Technical Insights
+## � Example Conversations — Baseline vs Fine-tuned
+
+This example shows a real interaction from the deployed Gradio interface, comparing both models on the same question.
+
+---
+
+**Question: What are the symptoms of Type 2 diabetes?**
+
+> **Baseline Model (No Fine-tuning):**
+> "The symptoms of Type 2 diabetes are:
+>
+> 1. Insulin resistance: This refers to the inability of insulin to properly transport glucose (sugar) into cells in the body.
+> 2. Hyperglycemia: High blood sugar levels (hyperglycemia) are a primary symptom of diabetes.
+> 3. Blurred vision: A decreased ability to focus on objects and recognize faces can also be a symptom of diabetes.
+> 4. Thirst: Frequent urination, especially at night, can also be a symptom of diabetes.
+> 5. Fatigue: This can be a sign that the..."
+
+> **Fine-tuned Model (LoRA Trained):**
+> "The symptoms of Type 2 diabetes include difficulty controlling blood sugar levels, increased thirst, and urination."
+
+---
+
+**Observation:** The fine-tuned model gives a concise, direct medical answer — consistent with the flashcard-style training data. The baseline generates a longer list but with less clinical focus. Across 500 test samples, the fine-tuned model achieved a **99.88% perplexity improvement** (1897.58 → 2.23), confirming significantly better understanding of medical language overall.
+
+## �💡 Technical Insights
 
 ### What Worked Well
 
